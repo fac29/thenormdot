@@ -22,13 +22,13 @@ public class User : IUser
 
     public void AddUser(User user)
     {
-        // This method doesn't make sense for a single User object
+
         throw new InvalidOperationException("AddUser operation is not supported for a single User object.");
     }
 
     public void RemoveUser(User user)
     {
-        // This method doesn't make sense for a single User object
+
         throw new InvalidOperationException("RemoveUser operation is not supported for a single User object.");
     }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using dotenv.net;
 using Microsoft.EntityFrameworkCore;
+using domain.entities;
 
 namespace infrastructure.data;
 
@@ -20,5 +21,8 @@ public class ApplicationDbContext : DbContext
             optionsBuilder.UseNpgsql(Environment.GetEnvironmentVariable("DATABASE_URL"));
         }
     }
+
+    public DbSet<User> Users { get; set; }
+
 
 }
