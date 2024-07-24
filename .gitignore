@@ -1,0 +1,17 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore Visual Studio user-specific files
+*.suo
+*.user
+
+# Ignore NuGet packages
+packages/
+
+# Ignore .NET runtime files
+*.dll
+*.pdb
+
+# Ignore .env file
+.env
