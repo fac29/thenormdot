@@ -10,7 +10,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<User> Users { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-                : base(options)
+        : base(options)
     {
     }
 
@@ -19,7 +19,12 @@ public class ApplicationDbContext : DbContext
         if (!optionsBuilder.IsConfigured)
         {
             DotEnv.Load();
-            optionsBuilder.UseNpgsql(Environment.GetEnvironmentVariable("DATABASE_URL"));
+            var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new InvalidOperationException("DATABASE_URL environment variable is not set.");
+            }
+            optionsBuilder.UseNpgsql(connectionString);
         }
     }
 
