@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thenormapi", "thenormapi\th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "domain\domain.csproj", "{4D7D6934-FA39-4FBA-AA78-531895DC16A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infrastructure", "infrastructure\infrastructure.csproj", "{C6C324B9-E053-4828-A52B-4B4797EF9B94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{4D7D6934-FA39-4FBA-AA78-531895DC16A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D7D6934-FA39-4FBA-AA78-531895DC16A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D7D6934-FA39-4FBA-AA78-531895DC16A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C324B9-E053-4828-A52B-4B4797EF9B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C324B9-E053-4828-A52B-4B4797EF9B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C324B9-E053-4828-A52B-4B4797EF9B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C324B9-E053-4828-A52B-4B4797EF9B94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
