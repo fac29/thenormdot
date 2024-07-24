@@ -23,6 +23,13 @@ public class ApplicationDbContext : DbContext
         }
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<User>().HasKey(u => u.Id);
+    }
+
 
 
 }

@@ -12,7 +12,10 @@ public class User : IUser
     public string SummaryParagraph { get; set; }
 
     // Parameterless constructor
-    public User() { }
+    public User()
+    {
+        Id = Guid.NewGuid();
+    }
 
     public void AddUser(User user)
     {

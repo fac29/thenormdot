@@ -6,14 +6,10 @@ namespace domain.interfaces;
 public interface IUser
 {
 
-    Guid Id { get; }
-
+    Guid Id { get; set; }
     string Name { get; set; }
-
     string Email { get; set; }
-
     string Avatar { get; set; }
-
     string SummaryParagraph { get; set; }
 
     void AddUser(User user);
